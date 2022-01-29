@@ -13,8 +13,12 @@ public class PooJava {
         game2.color = "Black";
         game2.batery = false;
 
-        System.out.println("Let's Go ?");
-        System.out.println(args[0]);
+        System.out.println("Whats is your name ?");
+        Scanner day = new Scanner(System.in);
+        String name = day.nextLine();
+
+        System.out.println("Hello " + name);
+
         System.out.println(game1.getName() + " is " + game1.getColor() + " has batery ? " + game1.getBatery());
         System.out.println(game2.getName() + " is " + game2.getColor() + " has batery ? " + game2.getBatery());
     }
